@@ -38,7 +38,7 @@ jobs:
       
       # Build
       - name: Build project
-        uses: caiusno1/unity-builder@master
+        uses: caiusno1/unity-builder@v1.4
         with:
           unityVersion: 2018.4.18f1
           androidKeystoreName:  "asterdash.keystore"
