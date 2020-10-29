@@ -20,5 +20,4 @@ jobs:
           lfs: true
       
       - name: Hello world action step
-        id: hello
         uses: actions/buildAndroid
