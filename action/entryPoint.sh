@@ -8,7 +8,7 @@ unity-editor -nographics \
     -logfile /dev/stdout \
     -quit \
     -customBuildName "1" \
-    -projectPath "/unityci" \
+    -projectPath "." \
     -buildTarget "Android" \
     -customBuildTarget "Android" \
     -customBuildPath "/Android.apk" \
