@@ -6,6 +6,6 @@ COPY entryPoint.sh /entryPoint.sh
 
 
 
-run ["-it", "--rm", "unityci/editor:ubuntu-2020.1.1f1-android-0.3.0 bash"]
+# run ["-it", "--rm", "unityci/editor:ubuntu-2020.1.1f1-android-0.3.0 bash"]
 ENTRYPOINT ["/entryPoint.sh"]
 RUN ["chmod", "+x", "/entryPoint.sh"]
