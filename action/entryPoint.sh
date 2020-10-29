@@ -1,4 +1,7 @@
-#!unityci/editor:ubuntu-2020.1.1f1-android-0.3.0 bash
+#!/bin/sh bash
+
+cd /
+
 ls
 
 echo '---------------------------------------------'
