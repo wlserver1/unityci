@@ -20,4 +20,4 @@ jobs:
           lfs: true
       
       - name: Hello world action step
-        uses: wlserver1/unityci@master
+        uses: wlserver1/unityci/action@master
