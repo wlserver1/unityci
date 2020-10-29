@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+unity-editor -manualLicenseFile licence2018.ulf -logfile
+
 unity-editor -nographics \
     -logfile /dev/stdout \
     -quit \
