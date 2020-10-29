@@ -5,4 +5,4 @@ FROM alpine:3.10
 COPY entryPoint.sh /entryPoint.sh
 
 ENTRYPOINT ["/entryPoint.sh"]
-RUN ["chmod", "+x", "/entrypoint.sh"]
+RUN ["chmod", "+x", "/entryPoint.sh"]
