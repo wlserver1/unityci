@@ -18,53 +18,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           lfs: true
-
-      # Cache
-      - uses: actions/cache@v1.1.0
-        with:
-          path: Library1
-          key: Library1
-
-#       - uses: nttld/setup-ndk@v1
-#         id: setup-ndk
-#         with:
-#           ndk-version: r16b
-#       - run: |
-#           export ANDROID_NDK_HOME=${{ steps.setup-ndk.outputs.ndk-path }} 
-#           export PATH=$PATH:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$ANDROID_NDK
-#           printenv
-#           cd ${{ steps.setup-ndk.outputs.ndk-path }}
-#           ls
       
-      # Build
-      - name: Build project
-        uses: caiusno1/unity-builder@v1.2
-        with:
-          unityVersion: 2018.4.18f1
-          androidKeystoreName:  "asterdash.keystore"
-          androidKeystorePass: "withoutlogic"
-          androidKeyaliasName: "abhay nigam"
-          androidKeyaliasPass: "withoutlogic"
-#           androidAppBundle: "true"
-          #customImage: gableroux/unity3d@sha256:47ed0c188f19c1445e3fbf0c96bbe3f9ddc4123445bd97808c49cf523102c4cf
-          targetPlatform: Android
-        
-      # Output
-      - uses: actions/upload-artifact@v1
-        with:
-          name: Build
-          path: 
-            build
+      - name: 'Dockefile'
+        description: 'My DockerFile'
+        runs:
+          using: 'docker'
+          image: 'Dockerfile.dockerfile'
       
-      - name: Display Build Path
-        run: |
-          cd build/Android
-          ls
-          
-      # - name: upload artifact to Firebase App Distribution
-      #   uses: wzieba/Firebase-Distribution-Github-Action@v1
-      #   with:
-      #     appId: ${{secrets.FIREBASE_APP_ID}}
-      #     token: ${{secrets.FIREBASE_TOKEN}}
-      #     groups: AsterDash
-      #     file: build/Android/Android.apk
+ 
+      
