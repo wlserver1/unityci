@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir=$(PWD)
+_d="$(pwd)"
 
 cd /
 
@@ -14,7 +14,7 @@ echo '---------------------------------------------'
 
 ls
 
-cd unity
+cd unity/Editor/Data/PlaybackEngines/AndroidPlayer
 
 echo '-----------------------------------------------'
 
@@ -22,4 +22,6 @@ ls
 
 echo '-----------------------------------------------'
 
-cd dir
+cd "$_d"
+
+ls
