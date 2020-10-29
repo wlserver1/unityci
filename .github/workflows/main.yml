@@ -20,4 +20,4 @@ jobs:
           lfs: true
       
       - name: Hello world action step
-        uses: ./actions/buildAndroid@v1
+        uses: ./actions/buildAndroid/buildAndroid@v1
