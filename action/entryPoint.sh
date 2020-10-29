@@ -1,27 +1,17 @@
 #!/usr/bin/env bash
 
-_d="$(pwd)"
-
-cd /
-
-ls
-
-echo '---------------------------------------------'
-
-cd opt
-
-echo '---------------------------------------------'
-
-ls
-
-cd unity/Editor/Data/PlaybackEngines/AndroidPlayer
-
-echo '-----------------------------------------------'
-
-ls
-
-echo '-----------------------------------------------'
-
-cd "$_d"
-
-ls
+unity-editor -nographics \
+    -logfile /dev/stdout \
+    -quit \
+    -customBuildName "1" \
+    -projectPath "/unityci" \
+    -buildTarget "Android" \
+    -customBuildTarget "Android" \
+    -customBuildPath "/Android.apk" \
+    -executeMethod "UnityBuilderAction.Builder.BuildProject" \
+    -buildVersion "1" \
+    -androidVersionCode "1" \
+    -androidKeystoreName "asterdash.keystore" \
+    -androidKeystorePass "withoutlogic" \
+    -androidKeyaliasName "abhay nigam" \
+    -androidKeyaliasPass "withoutlogic"
