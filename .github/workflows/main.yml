@@ -19,11 +19,6 @@ jobs:
         with:
           lfs: true
       
-      - name: 'Dockefile'
-        description: 'My DockerFile'
-        runs:
-          using: 'docker'
-          image: 'Dockerfile.dockerfile'
-      
- 
-      
+      - name: Hello world action step
+        id: hello
+        uses: actions/buildAndroid
