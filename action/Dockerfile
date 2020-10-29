@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM alpine:3.10
+FROM unityci/editor:ubuntu-2020.1.2f1-android-0.3
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entryPoint.sh /entryPoint.sh
