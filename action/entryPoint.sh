@@ -19,3 +19,7 @@ unity-editor -nographics \
     -androidKeystorePass "withoutlogic" \
     -androidKeyaliasName "abhay nigam" \
     -androidKeyaliasPass "withoutlogic"
+
+cd /
+
+ls
