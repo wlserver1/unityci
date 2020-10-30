@@ -32,4 +32,4 @@ jobs:
         with:
           name: Build
           path: 
-            "build/Android/Android.apk"
+            "build/Android/Android.aab"
