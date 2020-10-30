@@ -29,6 +29,9 @@ jobs:
         uses: wlserver1/unityci/action@master
       
       - uses: actions/upload-artifact@v1
+      - run: ls
+      - run: cd /
+      - run: ls
         with:
           name: Build
           path: 
