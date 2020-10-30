@@ -13,7 +13,7 @@ unity-editor -nographics \
     -projectPath "." \
     -buildTarget "Android" \
     -customBuildTarget "Android" \
-    -customBuildPath "build/Android/Android.apk" \
+    -customBuildPath "build/Android/Android.aab" \
     -executeMethod "UnityBuilderAction.Builder.BuildProject" \
     -buildVersion "1" \
     -androidVersionCode "1" \
