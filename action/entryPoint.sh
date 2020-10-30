@@ -23,3 +23,5 @@ unity-editor -nographics \
     -androidKeyaliasPass "withoutlogic"
 
 pwd
+
+ls
