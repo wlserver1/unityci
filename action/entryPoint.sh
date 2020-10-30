@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+pwd
+
 unity-editor -nographics \
      -manualLicenseFile licence2018.ulf \
      -logfile
@@ -20,6 +22,4 @@ unity-editor -nographics \
     -androidKeyaliasName "abhay nigam" \
     -androidKeyaliasPass "withoutlogic"
 
-cd /
-
-ls
+pwd
