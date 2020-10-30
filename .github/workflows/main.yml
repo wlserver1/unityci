@@ -3,9 +3,6 @@ on:
   pull_request: {}
   push: { branches: [master] }
 
-# env:
-#   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-
 jobs:
   build:
     name: Build my project
@@ -25,7 +22,7 @@ jobs:
           path: MyTest1
           key: MyTest1
       
-      - name: Hello world action step
+      - name: Building
         uses: wlserver1/unityci/action@master
       
       - uses: actions/upload-artifact@v1
