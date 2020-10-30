@@ -22,6 +22,8 @@ unity-editor -nographics \
     -androidKeyaliasName "abhay nigam" \
     -androidKeyaliasPass "withoutlogic"
 
+cd /
+
 pwd
 
 ls
