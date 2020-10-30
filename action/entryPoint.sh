@@ -13,7 +13,7 @@ unity-editor -nographics \
     -projectPath "." \
     -buildTarget "Android" \
     -customBuildTarget "Android" \
-    -customBuildPath "/Android.apk" \
+    # -customBuildPath "/Android.apk" \
     -executeMethod "UnityBuilderAction.Builder.BuildProject" \
     -buildVersion "1" \
     -androidVersionCode "1" \
@@ -23,5 +23,9 @@ unity-editor -nographics \
     -androidKeyaliasPass "withoutlogic"
 
 pwd
+
+ls
+
+cd /
 
 ls
